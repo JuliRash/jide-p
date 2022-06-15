@@ -1,0 +1,16 @@
+<h1>Welcome to django</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+
+  {% for contract in contracts%}
+  <tr>
+    <td>{{ contract.name }}</td>
+    <td>{{ contract.start_date }}</td>
+    <td>{{ contract.end_date }}</td>
+  </tr>
+  {% endfor %}
+</table>
